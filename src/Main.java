@@ -6,7 +6,7 @@ public class Main extends Application{
     @Override
     public void start(Stage stage) throws Exception {
         PaneOrganizer organizer = new PaneOrganizer();
-        Scene scene = new Scene(organizer.getRoot(), 1000, 700);
+        Scene scene = organizer.getScene();
         stage.setScene(scene);
         stage.setResizable(false);
         stage.setTitle("Flappy Bird - Genetic Algorithm");
